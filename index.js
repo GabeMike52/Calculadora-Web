@@ -26,3 +26,37 @@ function calcular () {
         erroAnterior = true;
     }
 }
+
+function abrirPopup() {
+    let popup = document.getElementById('popup-temas');
+    popup.style.display = 'block';
+}
+
+function fecharPopup() {
+    let popup = document.getElementById('popup-temas');
+    popup.style.display = 'none';
+}
+
+function setTema(tema) {
+    document.body.classList.remove('tema-bosque');
+    document.body.classList.remove('tema-cerejeira');
+    document.body.classList.remove('tema-acude');
+    document.body.classList.remove('tema-areia');
+    switch (tema) {
+        case 'bosque':
+            document.body.classList.add('tema-bosque');
+            break;
+        case 'cerejeira':
+            document.body.classList.add('tema-cerejeira');
+            break;
+        case 'acude':
+            document.body.classList.add('tema-acude');
+            break;
+        case 'areia':
+            document.body.classList.add('tema-areia');
+            break;
+        default:
+            break;
+    }
+    fecharPopup();
+}

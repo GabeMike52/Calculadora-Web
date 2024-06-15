@@ -27,8 +27,18 @@
             <button type="button" onclick="inputTela('.')">.</button>
             <button type="button" onclick="calcular()"class="operador-btn">=</button>
             <button type="button" onclick="limparTela()"class="operador-btn">C</button>
+            <button onclick="abrirPopup()" id="abrir-popup">Mudar Tema</button>
         </div>
     </div>
+        <div id="popup-temas" class="popup">
+            <button onclick="setTema('bosque')" id="bosque" class="btn-popup">Bosque</button>
+            <button onclick="setTema('cerejeira')" id="cereja" class="btn-popup">Cerejeira</button>
+            <button onclick="setTema('acude')" id="agua" class="btn-popup">Açude</button>
+            <button onclick="setTema('areia')" id="areia" class="btn-popup">Areia</button>
+            <div class="caixa-cancelar">
+                <button onclick="fecharPopup()" id="cancelar" class="btn-popup">X</button>
+            </div>
+        </div>
     <script src="index.js"></script> 
 </body>
 </html>
