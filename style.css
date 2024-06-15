@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: hsl(0, 0%, 95%);
+}
+#calculadora {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: hsl(175, 62%, 8%);
+    border-radius: 15px;
+    max-width: 500px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+#tela {
+    width: 100%;
+    padding: 20px;
+    font-size: 5rem;
+    text-align: left;
+    border: none;
+    background-color: hsl(175, 62%, 20%);
+    color: aliceblue;
+}
+#teclas {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    padding: 25px;
+}
+button {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+    border: none;
+    background-color: hsl(175, 62%, 15%);
+    color: aliceblue;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: hsl(175, 62%, 20%);
+}
+
+button:active {
+    background-color: hsl(175, 62%, 40%);
+}
+
+.operador-btn {
+    background-color: hsl(73, 74%, 55%);
+    color: hsl(175, 62%, 15%);
+}
+
+.operador-btn:hover {
+    background-color: hsl(73, 74%, 75%);
+}
+
+.operador-btn:active {
+    background-color: hsl(73, 74%, 85%);
+}
