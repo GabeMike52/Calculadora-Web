@@ -98,25 +98,31 @@ button:active {
     background-color: hsl(0, 100%, 75%);
 }
 
-.tema-bosque {
+.tema-bosque-body {
     background-color: #6b9970;
     color: #fff;
 }
 
 /* Tema Cerejeira */
-.tema-cerejeira {
+.tema-cerejeira-body {
     background-color: #e93c7e;
     color: #fff;
 }
+.tema-cerejeira-calc {
+    background-color: hsl(175, 62%, 8%);
+    max-width: 500px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
 
 /* Tema Açude */
-.tema-acude {
+.tema-acude-body {
     background-color: #0043c0;
     color: #fff;
 }
 
 /* Tema Areia */
-.tema-areia {
+.tema-areia-body {
     background-color: #ecdcb1;
     color: #333;
 }
